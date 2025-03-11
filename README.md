@@ -20,13 +20,43 @@
 > 執行方式： 1. 下載或 clone 此倉庫； 2. 進入對應的資料夾，如：`cd "子資料夾名稱"`； 3. 在該資料夾中使用命令提示字元 (CMD) 或終端機執行 Python 檔案，如： `python (檔名).py`。
 >> 另可參考各專案資料夾內執行截圖檔案。
 
-1. [Treasure of Tunes](./)
+1. [TurtleCrossing](./TurtleCrossing)
+  + **Turtle Crossing Game 烏龜過馬路遊戲**
+    + 類 Jumping frog / Frog Crossing 遊戲
+    + 玩家操縱一隻烏龜，必須找時機穿越充滿移動中車輛的道路
+    + 抵達終點、level up後，烏龜會回到起始點，進行下一關卡。
+    + 隨著關卡等級提昇，難度（車子數量、速度）將會隨之增加。
+  + **使用的主要技術/概念**
+    + 主要以python內建之[turtle — Turtle graphics](https://docs.python.org/3/library/turtle.html)進行開發
+    + 以GUI及OOP概念，將player、場景、計分、車輛等項目拆分，進行模組化(modularize)，利於管理
+  + 完成日期: *[2025-03-11]*
+  + <span style="color: darkorange">未來預計延伸/改進：</span>
+    + 增加豐富度，如隨機車輛大小，或關卡第二階段（過河——踩上浮木隨之移動）等
+
+2. [Blackjack](./Blackjack)
+  + **Blackjack 撲克遊戲**
+    + 仿製常見之Blackjack（二十一點）遊戲
+    + 初始玩家及莊家（電腦）皆有兩張牌，玩家可看見自己的所有手牌以及電腦的第一張牌
+    + 玩家可持續叫牌或選擇pass，pass後玩家回合結束，進入莊家階段，若莊家手牌點數不足17點，則莊家會持續叫牌
+    + Ace（1）卡牌可視為1點或11點；JQK皆視為10點
+    + 勝利條件：
+      1. 若雙方手牌皆未超過21點，點數大者勝。
+      2. 若玩家手上點數恰好21點則Blackjack，無論莊家點數，皆為玩家獲勝
+      3. 若玩家手牌已滿5張且未bust（超過21點）則屬於「Five-Card Charlie」，無論莊家點數，皆為玩家獲勝
+  + **使用的主要技術/概念**
+    + 將deal card、calculate score、show hand等遊戲各階段拆分為不同functions，利於管理
+    + 以if-else、while loop等進行遊戲流程管理
+  +  完成日期: *[2025-03-04]*
+  + <span style="color: darkorange">未來預計延伸/改進：</span>
+    + 轉以OOP呈現，讓程式結構更直觀，便於維護擴展
+
+3. [Treasure of Tunes](./Treasure%20of%20Tunes)
   + **簡易尋寶遊戲——Treasure of Tunes**
-    + 玩家是個冒險者，來到 Muse Island 尋找失落的旋律（lost melody）。
-    + 玩家必須透過輸入自己的選擇，成功抵達Happy Ending。過程中只要稍有疏失，立刻就會Game Over。
-    + 可重新「接關」從失敗的地方重新開始。
+    + 玩家是個冒險者，來到 Muse Island 尋找失落的旋律（lost melody）
+    + 玩家必須透過輸入自己的選擇，成功抵達Happy Ending。過程中只要稍有疏失，立刻就會Game Over
+    + 可重新「接關」從失敗的地方重新開始
     + 防呆設計，避免無效或複數輸入（如輸入指定範圍以外的文字）
-    + 搭配簡單的ASCII Art增加視覺豐富度。
+    + 搭配簡單的ASCII Art增加視覺豐富度
   + **使用的主要技術/概念**
     + 以while loop搭配conditions進行防呆設計，避免使用者不合理的輸入
     + 搭配錯誤提示文字，讓使用者重新輸入直到合理為止
@@ -37,12 +67,12 @@
     + 擴展遊戲內容，增加豐富度與吸引力
     + 增加GUI界面；或把程式變成網頁版 WEB 應用程式
 
-2. [待持續更新]
+4. [待持續更新]
 
 
 
 
 *首次建立：[2025-02-26]*  
-*最後更新: [2025-02-26]*
+*最後更新: [2025-03-11]*
 
 

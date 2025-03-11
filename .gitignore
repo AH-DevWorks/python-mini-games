@@ -240,3 +240,9 @@ learning/
 
 # Photoshop files (e.g., for image editing/demos)
 *.psd
+
+# Projects that under construction
+HigherLower/
+TurtleRace/
+SnakeGame/
+PongGame/
